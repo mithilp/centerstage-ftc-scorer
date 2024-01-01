@@ -324,6 +324,13 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+
+			<div className="w-screen fixed bottom-0 left-0 bg-blue-600 p-4 flex items-center space-x-4">
+				<h2 className="text-2xl font-black">Total Score: 0</h2>
+				<button className="transition text-base font-bold border-2 rounded-lg bg-gray-600 hover:bg-gray-700 active:bg-gray-800 px-2 py-1">
+					Reset
+				</button>
+			</div>
 		</div>
 	);
 }
