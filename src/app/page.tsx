@@ -2,9 +2,12 @@ import Clock from "@/components/Clock";
 
 export default function Home() {
 	return (
-		<div className="p-8">
-			<div className="flex justify-between items-center">
-				<h1 className="text-4xl font-black">FTC CENTERSTAGE℠ Scorer</h1>
+		<div className="p-4 md:p-8">
+			<div className="flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between items-center">
+				<h1 className="text-4xl font-black hidden md:block">
+					FTC CENTERSTAGE℠ Scorer
+				</h1>
+				<h1 className="text-4xl font-black md:hidden">CENTERSTAGE℠ Scorer</h1>
 				<div className="flex space-x-4 items-center">
 					<Clock timer />
 					<div className="border-r-2 h-20" />
@@ -12,10 +15,10 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="lg:flex justify-between">
-				<div className="mt-4 p-4 rounded-lg">
+			<div className="lg:flex justify-between space-y-4 md:space-y-0 mt-4">
+				<div className="md:p-4 rounded-lg">
 					<h2 className="text-2xl font-black">Autonomous</h2>
-					<div className="flex space-x-4 mb-2">
+					<div className="flex flex-col md:flex-row md:space-x-4 space-y-1 md:space-y-0 mb-2">
 						<div className="space-y-2 md:w-56">
 							<div className="space-y-1">
 								<h3 className="text-lg font-bold">Total Backstage Pixels</h3>
@@ -57,7 +60,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="flex space-x-4">
+					<div className="flex flex-col md:flex-row md:space-x-4 space-y-1 md:space-y-0">
 						<div className="space-y-2 md:w-56">
 							<div className="space-y-1">
 								<h3 className="text-lg font-bold">Robot 1 Team Prop</h3>
@@ -154,10 +157,10 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className="mt-4 p-4 rounded-lg">
+				<div className="md:p-4 rounded-lg">
 					<h2 className="text-2xl font-black">Driver Controlled & Endgame</h2>
 					<div className="space-y-2">
-						<div className="flex space-x-4">
+						<div className="flex flex-col md:flex-row md:space-x-4 space-y-1 md:space-y-0">
 							<div className="space-y-2 md:w-56">
 								<div className="space-y-1">
 									<h3 className="text-lg font-bold">Backstage Pixels</h3>
@@ -199,7 +202,7 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className="flex space-x-4">
+						<div className="flex flex-col md:flex-row md:space-x-4 space-y-1 md:space-y-0">
 							<div className="space-y-2 md:w-56">
 								<div className="space-y-1">
 									<h3 className="text-lg font-bold">Mosaics</h3>
@@ -241,7 +244,7 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className="flex space-x-4">
+						<div className="flex flex-col md:flex-row md:space-x-4 space-y-1 md:space-y-0">
 							<div className="space-y-2 md:w-56">
 								<div className="space-y-1">
 									<h3 className="text-lg font-bold">Robot 1 Drone Zone</h3>
@@ -283,7 +286,7 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className="flex space-x-4">
+						<div className="flex flex-col md:flex-row md:space-x-4 space-y-1 md:space-y-0">
 							<div className="space-y-2 md:w-56">
 								<div className="space-y-1">
 									<h3 className="text-lg font-bold">Robot 1 Location</h3>
