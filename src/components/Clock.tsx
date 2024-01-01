@@ -22,7 +22,7 @@ const Clock = ({ stopwatch, timer }: ClockProps) => {
 	useEffect(() => {
 		let myInterval = setInterval(() => {
 			if (ticking) {
-				setTime(time + 1);
+				setTime(stopwatch ? time + 1 : time - 1);
 			} else {
 				clearInterval(myInterval);
 			}
