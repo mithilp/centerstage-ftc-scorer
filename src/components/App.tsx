@@ -64,17 +64,44 @@ const App = () => {
 
 	return (
 		<>
-			<div className="lg:flex justify-between space-y-4 md:space-y-0 mt-4">
-				<div className="md:p-4 rounded-lg">
+			<div className="lg:flex justify-between space-y-4 md:space-y-0 mt-8">
+				<div className="rounded-lg">
 					<Autonomous data={data} setData={setData} />
 				</div>
 
-				<div className="md:p-4 rounded-lg">
+				<div className="rounded-lg">
 					<DriverControlled data={data} setData={setData} />
 				</div>
 			</div>
 
-			{/* footer */}
+			<div className="mt-8 md:mt-16 mb-16 md:mb-0 flex flex-col md:flex-row justify-between">
+				<p>
+					Made with love ❤️ by{" "}
+					<a
+						href="https://www.linkedin.com/in/mithil-patil/"
+						className="underline"
+					>
+						Mithil Patil
+					</a>
+				</p>
+
+				<div className="space-x-2">
+					<a
+						href="https://github.com/mithilp/centerstage-ftc-scorer"
+						className="underline"
+					>
+						Contribute on GitHub
+					</a>
+					<a
+						href="https://github.com/mithilp/centerstage-ftc-scorer/issues/new"
+						className="underline"
+					>
+						Report a Bug
+					</a>
+				</div>
+			</div>
+
+			{/* sticky footer */}
 			<div className="w-screen fixed bottom-0 left-0 bg-blue-600 p-4 flex items-center space-x-4">
 				<h2 className="text-2xl font-black">
 					Total Score: {calculcateScore()}
