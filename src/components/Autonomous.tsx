@@ -53,7 +53,7 @@ const Autonomous = ({ data, setData }: AutonomousProps) => {
 								onClick={() =>
 									setData({
 										...data,
-										autonBackstagePixels: data.autonBackstagePixels + 1,
+										autonBackstagePixels: data.autonBackstagePixels - 1,
 									})
 								}
 								className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg"
