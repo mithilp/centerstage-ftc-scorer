@@ -15,8 +15,8 @@ export default function Home() {
 			<div className="lg:flex justify-between">
 				<div className="mt-4 p-4 rounded-lg">
 					<h2 className="text-2xl font-black">Autonomous</h2>
-					<div className="flex space-x-4">
-						<div className="space-y-2">
+					<div className="flex space-x-4 mb-2">
+						<div className="space-y-2 md:w-56">
 							<div className="space-y-1">
 								<h3 className="text-lg font-bold">Total Backstage Pixels</h3>
 								<div>
@@ -34,7 +34,31 @@ export default function Home() {
 									</button>
 								</div>
 							</div>
+						</div>
 
+						<div className="space-y-2 md:w-56">
+							<div className="space-y-1">
+								<h3 className="text-lg font-bold">Total Backdrop Pixels</h3>
+								<div>
+									<input
+										min={0}
+										max={100}
+										className="border-2 border-r-0 bg-gray-700 rounded-l-lg without-ring p-2"
+										type="number"
+									/>
+									<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
+										+
+									</button>
+									<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
+										-
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div className="flex space-x-4">
+						<div className="space-y-2 md:w-56">
 							<div className="space-y-1">
 								<h3 className="text-lg font-bold">Robot 1 Team Prop</h3>
 								<div>
@@ -81,24 +105,7 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className="space-y-2">
-							<div className="space-y-1">
-								<h3 className="text-lg font-bold">Total Backdrop Pixels</h3>
-								<div>
-									<input
-										min={0}
-										max={100}
-										className="border-2 border-r-0 bg-gray-700 rounded-l-lg without-ring p-2"
-										type="number"
-									/>
-									<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
-										+
-									</button>
-									<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
-										-
-									</button>
-								</div>
-							</div>
+						<div className="space-y-2 md:w-56">
 							<div className="space-y-1">
 								<h3 className="text-lg font-bold">Robot 2 Team Prop</h3>
 								<div>
@@ -148,133 +155,166 @@ export default function Home() {
 				</div>
 
 				<div className="mt-4 p-4 rounded-lg">
-					<h2 className="text-2xl font-black">Driver-Controlled & Endgame</h2>
-					<div className="flex space-x-4">
-						<div className="space-y-2">
-							<div className="space-y-1">
-								<h3 className="text-lg font-bold">Total Backstage Pixels</h3>
-								<div>
-									<input
-										min={0}
-										max={100}
-										className="border-2 border-r-0 bg-gray-700 rounded-l-lg without-ring p-2"
-										type="number"
-									/>
-									<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
-										+
-									</button>
-									<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
-										-
-									</button>
+					<h2 className="text-2xl font-black">Driver Controlled & Endgame</h2>
+					<div className="space-y-2">
+						<div className="flex space-x-4">
+							<div className="space-y-2 md:w-56">
+								<div className="space-y-1">
+									<h3 className="text-lg font-bold">Backstage Pixels</h3>
+									<div>
+										<input
+											min={0}
+											max={100}
+											className="border-2 border-r-0 bg-gray-700 rounded-l-lg without-ring p-2"
+											type="number"
+										/>
+										<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
+											+
+										</button>
+										<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
+											-
+										</button>
+									</div>
 								</div>
 							</div>
 
-							<div className="space-y-1">
-								<h3 className="text-lg font-bold">Robot 1 Team Prop</h3>
-								<div>
-									<button className="transition text-base font-bold border-2 border-r-0 bg-blue-600 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-l-lg">
-										White Pixel
-									</button>
-									<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
-										Team Prop
-									</button>
-								</div>
-							</div>
-							<div className="space-y-1">
-								<h3 className="text-lg font-bold">Robot 1 Purple Pixel</h3>
-								<div>
-									<button className="transition text-base font-bold border-2 border-r-0 bg-blue-600 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-l-lg">
-										No
-									</button>
-									<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
-										Spike Mark
-									</button>
-								</div>
-							</div>
-							<div className="space-y-1">
-								<h3 className="text-lg font-bold">Robot 1 Yello Pixel</h3>
-								<div>
-									<button className="transition text-base font-bold border-2 border-r-0 bg-blue-600 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-l-lg">
-										No
-									</button>
-									<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
-										Backdrop
-									</button>
-								</div>
-							</div>
-							<div className="space-y-1">
-								<h3 className="text-lg font-bold">Robot 1 Navigated</h3>
-								<div>
-									<button className="transition text-base font-bold border-2 border-r-0 bg-blue-600 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-l-lg">
-										No
-									</button>
-									<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
-										Yes
-									</button>
+							<div className="space-y-2 md:w-56">
+								<div className="space-y-1">
+									<h3 className="text-lg font-bold">Backdrop Pixels</h3>
+									<div>
+										<input
+											min={0}
+											max={100}
+											className="border-2 border-r-0 bg-gray-700 rounded-l-lg without-ring p-2"
+											type="number"
+										/>
+										<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
+											+
+										</button>
+										<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
+											-
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
 
-						<div className="space-y-2">
-							<div className="space-y-1">
-								<h3 className="text-lg font-bold">Total Backdrop Pixels</h3>
-								<div>
-									<input
-										min={0}
-										max={100}
-										className="border-2 border-r-0 bg-gray-700 rounded-l-lg without-ring p-2"
-										type="number"
-									/>
-									<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
-										+
-									</button>
-									<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
-										-
-									</button>
+						<div className="flex space-x-4">
+							<div className="space-y-2 md:w-56">
+								<div className="space-y-1">
+									<h3 className="text-lg font-bold">Mosaics</h3>
+									<div>
+										<input
+											min={0}
+											max={100}
+											className="border-2 border-r-0 bg-gray-700 rounded-l-lg without-ring p-2"
+											type="number"
+										/>
+										<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
+											+
+										</button>
+										<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
+											-
+										</button>
+									</div>
 								</div>
 							</div>
-							<div className="space-y-1">
-								<h3 className="text-lg font-bold">Robot 2 Team Prop</h3>
-								<div>
-									<button className="transition text-base font-bold border-2 border-r-0 bg-blue-600 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-l-lg">
-										White Pixel
-									</button>
-									<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
-										Team Prop
-									</button>
+
+							<div className="space-y-2 md:w-56">
+								<div className="space-y-1">
+									<h3 className="text-lg font-bold">Highest Set Line</h3>
+									<div>
+										<input
+											min={0}
+											max={3}
+											className="border-2 border-r-0 bg-gray-700 rounded-l-lg without-ring p-2"
+											type="number"
+										/>
+										<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
+											+
+										</button>
+										<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
+											-
+										</button>
+									</div>
 								</div>
 							</div>
-							<div className="space-y-1">
-								<h3 className="text-lg font-bold">Robot 2 Purple Pixel</h3>
-								<div>
-									<button className="transition text-base font-bold border-2 border-r-0 bg-blue-600 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-l-lg">
-										No
-									</button>
-									<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
-										Spike Mark
-									</button>
+						</div>
+
+						<div className="flex space-x-4">
+							<div className="space-y-2 md:w-56">
+								<div className="space-y-1">
+									<h3 className="text-lg font-bold">Robot 1 Drone Zone</h3>
+									<div>
+										<button className="transition text-base font-bold border-2 border-r-0 bg-blue-600 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-l-lg">
+											No Drone
+										</button>
+										<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
+											1
+										</button>
+										<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
+											2
+										</button>
+										<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
+											3
+										</button>
+									</div>
 								</div>
 							</div>
-							<div className="space-y-1">
-								<h3 className="text-lg font-bold">Robot 2 Yello Pixel</h3>
-								<div>
-									<button className="transition text-base font-bold border-2 border-r-0 bg-blue-600 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-l-lg">
-										No
-									</button>
-									<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
-										Backdrop
-									</button>
+
+							<div className="space-y-2 md:w-56">
+								<div className="space-y-1">
+									<h3 className="text-lg font-bold">Robot 2 Drone Zone</h3>
+									<div>
+										<button className="transition text-base font-bold border-2 border-r-0 bg-blue-600 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-l-lg">
+											No Drone
+										</button>
+										<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
+											1
+										</button>
+										<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
+											2
+										</button>
+										<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
+											3
+										</button>
+									</div>
 								</div>
 							</div>
-							<div className="space-y-1">
-								<h3 className="text-lg font-bold">Robot 2 Navigated</h3>
-								<div>
-									<button className="transition text-base font-bold border-2 border-r-0 bg-blue-600 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-l-lg">
-										No
-									</button>
-									<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
-										Yes
-									</button>
+						</div>
+
+						<div className="flex space-x-4">
+							<div className="space-y-2 md:w-56">
+								<div className="space-y-1">
+									<h3 className="text-lg font-bold">Robot 1 Location</h3>
+									<div>
+										<button className="transition text-base font-bold border-2 border-r-0 bg-blue-600 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-l-lg">
+											No
+										</button>
+										<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
+											Backstage
+										</button>
+										<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
+											Rigging
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div className="space-y-2 md:w-56">
+								<div className="space-y-1">
+									<h3 className="text-lg font-bold">Robot 2 Location</h3>
+									<div>
+										<button className="transition text-base font-bold border-2 border-r-0 bg-blue-600 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-l-lg">
+											No
+										</button>
+										<button className="transition text-base font-bold border-2 border-r-0 hover:bg-gray-700 active:bg-gray-800 p-2 ">
+											Backstage
+										</button>
+										<button className="transition text-base font-bold border-2 hover:bg-gray-700 active:bg-gray-800 p-2 rounded-r-lg">
+											Rigging
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
