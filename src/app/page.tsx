@@ -1,5 +1,4 @@
-import Stopwatch from "@/components/Stopwatch";
-import Timer from "@/components/Timer";
+import Clock from "@/components/Clock";
 
 export default function Home() {
 	return (
@@ -7,9 +6,9 @@ export default function Home() {
 			<div className="flex justify-between items-center">
 				<h1 className="text-4xl font-black">FTC CENTERSTAGE℠ Scorer</h1>
 				<div className="flex space-x-4 items-center">
-					<Timer />
+					<Clock timer />
 					<div className="border-r-2 h-20" />
-					<Stopwatch />
+					<Clock stopwatch />
 				</div>
 			</div>
 		</div>

@@ -2,8 +2,13 @@
 
 import { useState, useEffect } from "react";
 
-const Timer = () => {
-	const [time, setTime] = useState(150);
+type ClockProps = {
+	stopwatch?: boolean;
+	timer?: boolean;
+};
+
+const Clock = ({ stopwatch, timer }: ClockProps) => {
+	const [time, setTime] = useState(stopwatch ? 0 : 150);
 	const [ticking, setTicking] = useState(false);
 
 	const toggleTicking = () => {
@@ -11,15 +16,13 @@ const Timer = () => {
 	};
 
 	const resetTimer = () => {
-		setTime(150);
+		setTime(0);
 	};
 
 	useEffect(() => {
 		let myInterval = setInterval(() => {
-			if (ticking && time > 0) {
-				setTime(time - 1);
-			} else if (ticking && time === 0) {
-				setTicking(false);
+			if (ticking) {
+				setTime(time + 1);
 			} else {
 				clearInterval(myInterval);
 			}
@@ -42,7 +45,7 @@ const Timer = () => {
 	return (
 		<div className="space-y-1">
 			<h2 className="text-xs tracking-widest uppercase text-gray-400 leading-none font-black text-center">
-				Timer
+				{stopwatch ? "Stopwatch" : "Timer"}
 			</h2>
 			<h3 className="text-4xl leading-none font-black text-center">
 				{formatTime(time)}
@@ -65,4 +68,4 @@ const Timer = () => {
 	);
 };
 
-export default Timer;
+export default Clock;
