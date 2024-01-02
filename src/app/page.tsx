@@ -17,6 +17,36 @@ export default function Home() {
 			</div>
 
 			<App />
+
+			<div className="mt-8 md:mt-16 mb-16 md:mb-0 flex flex-col md:flex-row justify-between">
+				<p>
+					Made with love ❤️ by{" "}
+					<a
+						target="_blank"
+						href="https://www.linkedin.com/in/mithil-patil/"
+						className="underline"
+					>
+						Mithil Patil
+					</a>
+				</p>
+
+				<div className="space-x-2">
+					<a
+						target="_blank"
+						href="https://github.com/mithilp/centerstage-ftc-scorer"
+						className="underline"
+					>
+						Contribute on GitHub
+					</a>
+					<a
+						target="_blank"
+						href="https://github.com/mithilp/centerstage-ftc-scorer/issues/new"
+						className="underline"
+					>
+						Report a Bug
+					</a>
+				</div>
+			</div>
 		</div>
 	);
 }
