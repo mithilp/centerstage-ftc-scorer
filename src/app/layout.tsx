@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={font.className}>
+			<head>
 				<Script
 					src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG}`}
 				/>
@@ -31,8 +31,8 @@ export default function RootLayout({
           gtag('config', '${process.env.GTAG}');
         `}
 				</Script>
-				{children}
-			</body>
+			</head>
+			<body className={font.className}>{children}</body>
 		</html>
 	);
 }
